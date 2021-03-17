@@ -1,6 +1,8 @@
 # Apache Ignite 2.10: Thin client expansion
 
-As of March 15, 2021, [Apache Ignite](https://ignite.apache.org/) 2.10 has been released. Let’s briefly overview some of major improvements.
+As of March 15, 2021, [Apache Ignite](https://ignite.apache.org/) 2.10 has been released. You can directly check the 
+full list of resolved [Important JIRA's](https://s.apache.org/i3ny6) but here let’s briefly overview some valuable 
+improvements.
 
 
 ## Thin clients
