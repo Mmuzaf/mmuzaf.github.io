@@ -11,8 +11,9 @@ Partition awareness is enabled by default in the 2.11 release and allows the thi
 node that owns the queried data. Without partition awareness, an application executes all queries and operations via 
 a single server node that acts as a proxy for the incoming requests.
 
-The support of continuous queries are added to the java thin client. For the other supported features you may check the 
-[List of Thin Client Features](https://cwiki.apache.org/confluence/display/IGNITE/Thin+clients+features).
+The support of [Continuous Queries](https://ignite.apache.org/docs/latest/key-value-api/continuous-queries) are added to the java 
+thin client. For the other supported features, you may check -
+the [List of Thin Client Features](https://cwiki.apache.org/confluence/display/IGNITE/Thin+clients+features).
 
 
 ## Cellular-clusters Deployment
