@@ -11,8 +11,8 @@ Partition awareness is enabled by default in the 2.11 release and allows the thi
 node that owns the queried data. Without partition awareness, an application executes all queries and operations via 
 a single server node that acts as a proxy for the incoming requests.
 
-The support of [Continuous Queries](https://ignite.apache.org/docs/latest/key-value-api/continuous-queries) are added to the java 
-thin client. For the other supported features, you may check -
+The support of [Continuous Queries](https://ignite.apache.org/docs/latest/thin-clients/java-thin-client#cache-entry-listening) 
+are added to the java thin client. For the other supported features, you may check -
 the [List of Thin Client Features](https://cwiki.apache.org/confluence/display/IGNITE/Thin+clients+features).
 
 
@@ -25,7 +25,8 @@ period of time which in turn increased the average latency and throughput of the
 
 Splitting the cluster into virtual cells containing 4-8 nodes may increase the total cluster performance and minimize the
 influence of one cell on another in case of node fail events. Such a technique also significantly increase transactions recovery 
-speed on cells not affected by failing nodes.
+speed on cells not affected by failing nodes. The time which transactions are parked also decreasing on not affected cells which 
+in turn decreases the worst latency for the cluster operations overall.
 
 From now on you can use the `RendezvousAffinityFunction` affinity function with the `ClusterNodeAttributeColocatedBackupFilter` to
 group nodes into virtual cells. Since the node baseline attributes are used as cell markers the corresponding 
@@ -38,25 +39,21 @@ and alive cells.
 ![transactions_cell_switch](../_img/switch_and_recovery_cells.png)
 
 
-## New Page Replacement Algorithms
+## New Page Replacement Policies
 
-Currently, pages rotation between page-memory (so-called the page replacement procedure) Apache Ignite uses the Random-LRU algorithm.
-This algorithm has a low maintenance cost, but it has many disadvantages and greatly affects the performance when the page replacement 
-is started. On some deployments, administrators even force a cluster restart periodically to avoid page replacement. 
-There are a few new algorithms available from now on.
+When Native Persistence is on and the amount of data, which Ignite stores on the disk, is bigger than the off-heap memory amount 
+allocated for the data region, another page should be evicted from the off-heap to the disk to preload a page from the disk to 
+the completely full off-heap memory. This process is called page replacement. Previously, Apache Ignite used the Random-LRU page 
+replacement algorithm which has a low maintenance cost, but it has many disadvantages and greatly affects the performance when 
+the page replacement is started. On some deployments, administrators even force a cluster restart periodically to avoid page 
+replacement. There are a few new algorithms available from now on:
+- Segmented-LRU Algorithm
+- CLOCK Algorithm
 
-### Segmented-LRU Algorithm
-
-It is a scan-resistant modification of the LRU algorithm. The pages list is divided into two segments. Pages in each segment are 
-ordered from the least to the most recently accessed. New pages are added to the most recently accessed end (tail) of the probationary 
-segment. Existing pages are removed from wherever they currently reside and added to the most recently accessed end of the protected 
-segment. Page to replace is polled from the least recently accessed end (head) of the probationary segment.
-
-### CLOCK Algorithm
-
-The CLOCK algorithm keeps a circular list of pages in memory, with the "hand" pointing to the last examined page frame in the list. 
-When a page fault occurs and no empty frames exist, then the hit flag of the page is inspected at the hand's location. If the hit 
-flag is 0, the new page is put in place of the page the "hand" points to, and the hand is advanced one position.
+Page replacement algorithm can be configured by the `PageReplacementMode` property of `DataRegionConfiguration`. By default, now 
+the CLOCK algorithm is used. You can check the 
+[Replacement Policies](https://ignite.apache.org/docs/latest/memory-configuration/replacement-policies) at documentation pages 
+for more details.
 
 
 ## Snapshot Restore And Check Commands
