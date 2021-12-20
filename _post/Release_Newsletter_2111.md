@@ -5,7 +5,7 @@ The new [Apache Ignite](https://ignite.apache.org/) 2.11.1 is an emergency relea
 [CVE-2021-45046](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046),
 [CVE-2021-45105](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45105) related to the ignite-log4j2 module usage.
 
-## When Log4j Vulnerability Exploitable for the Apache Ignite
+## Apache Ignite with Log4j Vulnerability
 
 All the following conditions must apply:
 
