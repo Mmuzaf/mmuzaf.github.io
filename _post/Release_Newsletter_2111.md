@@ -43,6 +43,7 @@ the `‐Dlog4j2.formatMsgNoLookups=true` command-line option.
 
 ### Method 3: Replace log4j2 Dependency Manually
 
-It is still possible to replace manually the Log4j 2.x versions in the Apache Ignite binary distribution to the `2.17.0` Log4j version 
-if you log configuration doesn't imply to use the RoutingAppender (in other case the RoutingAppender usage will generate garbage 
-in your logs).
+It is still possible to replace manually the Log4j 2.x versions in the Apache Ignite binary distribution to the `2.17.0` Log4j 
+version if you log configuration doesn't imply to use the RoutingAppender. In case of the RoutingAppender is used it may produce 
+some error messages in a log file at startup which is considered as a minor flow, however, we do not recommend this mitigation 
+method in this case.
