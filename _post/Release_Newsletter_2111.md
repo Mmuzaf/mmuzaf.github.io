@@ -31,18 +31,18 @@ executing this command:
 find $IGNITE_HOME/ -type f -name "*log4j-core-*.jar" -exec zip -q -d "{}" org/apache/logging/log4j/core/lookup/JndiLookup.class \;
 ```
 
-This will recursively find all log4j-core JAR files, starting from the IGNITE_HOME directory, and remove the vulnerable 
+This will recursively find all log4j-core JAR files, starting from the `IGNITE_HOME` directory, and remove the vulnerable 
 JndiLookup class from them.
 
-### Method 2: Disabling Lookups
+### Method 2: Disabling Message Lookups
 
 This method can be used as an additional protection layer in case you suspect not all log4j dependencies have been 
 properly updated. If using the Apache Ignite older version, it is recommended disabling message lookups globally by 
 setting the environment variable `LOG4J_FORMAT_MSG_NO_LOOKUPS` to `true` or, alternatively, run the Apache Ignite with 
-the `‐Dlog4j2.formatMsgNoLookups=True` command-line option.
+the `‐Dlog4j2.formatMsgNoLookups=true` command-line option.
 
 ### Method 3: Replace log4j2 Dependency Manually
 
-It is still possible to replace manually the Log4j 2.x versions in the Apache Ignite binary distribution to the 2.17.0 Log4j version 
+It is still possible to replace manually the Log4j 2.x versions in the Apache Ignite binary distribution to the `2.17.0` Log4j version 
 if you log configuration doesn't imply to use the RoutingAppender (in other case the RoutingAppender usage will generate garbage 
 in your logs).
