@@ -165,3 +165,19 @@ all other imports
 [blank line]
 static all other imports
 ```
+
+### Apache Calcite
+
+https://gist.github.com/gianm/27a4e3cad99d7b9b6513b6885d3cfcc9#file-calcite-intellij-style-xml-L16
+
+```
+org.apache.*
+[blank line]
+com.*
+[blank line]
+all other imports
+[blank line]
+java.*
+[blank line]
+static all other imports
+```
