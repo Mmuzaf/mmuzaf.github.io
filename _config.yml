@@ -1,8 +1,28 @@
+title: Maxim Muzafarov Blog
+author:
+  name: Maxim Muzafarov
+  email: mmuzaf@apache.org
+
 plugins:
   - jekyll-relative-links
+
 theme: minima
 minima:
   skin: dark
+
+# To use the latest Minima version on GitHub Pages.
+remote_theme: jekyll/minima
+
+# To link only specific pages in your header, use this and add the path to the pages.
+header_pages:
+  - about.md
+
+# The `>` after `description:` means to ignore line-breaks until next key.
+# If you want to omit the line-break after the end of text, use `>-` instead.
+description: >
+  Personal blog of Maxim Muzafarov. I write about software development, open source, and other topics that interest me, 
+  learning and sharing knowledge with others.
+
 markdown: GFM
 relative_links:
   enabled: true
