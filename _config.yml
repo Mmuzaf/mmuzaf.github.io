@@ -1,4 +1,4 @@
-title: Maxim Muzafarov Blog
+title: Software Development and Open Source Blog
 author:
   name: Maxim Muzafarov
   email: mmuzaf@apache.org
@@ -6,12 +6,11 @@ author:
 plugins:
   - jekyll-relative-links
 
-theme: minima
-minima:
-  skin: dark
-
 # To use the latest Minima version on GitHub Pages.
-# remote_theme: jekyll/minima
+remote_theme: jekyll/minima
+# theme: minima
+minima:
+  skin: auto
 
 # To link only specific pages in your header, use this and add the path to the pages.
 header_pages:
