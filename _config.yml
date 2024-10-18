@@ -1,6 +1,8 @@
 plugins:
   - jekyll-relative-links
 theme: minima
+minima:
+  skin: dark
 markdown: GFM
 relative_links:
   enabled: true

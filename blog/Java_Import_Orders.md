@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ## The Classes Import Order For Java Projects
 
 This is a list of the most popular projects (most of them are [open-source and  written in Java](https://projects.apache.org/projects.html?language#Java)) for viewing what kind of classes import order they use according to an appropriate `checkstyle` configuration.

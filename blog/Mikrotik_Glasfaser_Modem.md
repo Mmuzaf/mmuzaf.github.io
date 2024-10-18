@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # Set up a Mikrotik Router HEXs with Fiber Optic Modem
 
 ## Table of Contents

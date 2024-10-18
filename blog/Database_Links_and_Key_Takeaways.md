@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ## The links of white papers, articles, and other resources that touch on the topic of the database links and key takeaways
 
 Last updated: 2024-10-17
