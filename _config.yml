@@ -11,7 +11,7 @@ minima:
   skin: dark
 
 # To use the latest Minima version on GitHub Pages.
-remote_theme: jekyll/minima
+# remote_theme: jekyll/minima
 
 # To link only specific pages in your header, use this and add the path to the pages.
 header_pages:
