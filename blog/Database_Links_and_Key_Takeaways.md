@@ -9,6 +9,7 @@ Last updated: 2024-10-22
 The post is updated regularly to include the latest resources and key takeaways and to remove the outdated ones. \
 The resources are listed in the order of my personal investigation and interest in the topic.
 
+* TOC
 {:toc}
 
 ---
