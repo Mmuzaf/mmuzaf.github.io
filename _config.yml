@@ -28,3 +28,6 @@ relative_links:
   collections: true
 include:
   - index.md
+
+url: "https://mmuzaf.github.io"
+baseurl: "/"
