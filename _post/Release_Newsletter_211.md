@@ -36,7 +36,7 @@ view was added.
 See benchmarks below that represent the worst (max) latency, which happens in case of node left/failure/timeout events on broken 
 and alive cells.
 
-![transactions_cell_switch](../_img/switch_and_recovery_cells.png)
+![transactions_cell_switch](./../img/switch_and_recovery_cells.png)
 
 
 ## New Page Replacement Policies

@@ -87,10 +87,10 @@ providing guarantees like Raft or Paxos.
 - **Providing API** for the layer above to interact with the tablet, e.g. insert, update, delete, etc.
 
 **The tables overview**
-![ydb_tablet_abstraction_layer.png](/_img/ydb_tablet_abstraction_layer.png)
+![ydb_tablet_abstraction_layer.png](./../img/ydb_tablet_abstraction_layer.png)
 
 **The tablet internals**
-![ydb_tablet_internals.png](/_img/ydb_tablet_internals.png)
+![ydb_tablet_internals.png](./../img/ydb_tablet_internals.png)
 
 **An example of the data-shard tablet**
-![ydb_datashard_tablet.png](/_img/ydb_datashard_tablet.png)
+![ydb_datashard_tablet.png](./../img/ydb_datashard_tablet.png)

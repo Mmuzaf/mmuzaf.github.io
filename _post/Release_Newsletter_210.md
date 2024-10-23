@@ -92,7 +92,7 @@ All these files are consumed by offline-tool that builds the report in a human-r
 
 [Read More](https://ignite.apache.org/docs/latest/monitoring-metrics/performance-statistics)
 
-![transactions statistics](../_img/performance_statistics_2021-03-17_2.png)
+![transactions statistics](./../img/performance_statistics_2021-03-17_2.png)
 
 
 ## Transparent Data Encryption - Cache Key Rotation
