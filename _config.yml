@@ -3,14 +3,15 @@ author:
   name: Maxim Muzafarov
   email: mmuzaf@apache.org
 
-plugins:
-  - jekyll-relative-links
-
 # To use the latest Minima version on GitHub Pages.
-remote_theme: jekyll/minima
-# theme: minima
-minima:
-  skin: auto
+# remote_theme: jekyll/minima
+# minima:
+#   skin: auto
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-relative-links
 
 # To link only specific pages in your header, use this and add the path to the pages.
 header_pages:
