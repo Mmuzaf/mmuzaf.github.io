@@ -1,4 +1,6 @@
 title: Software Development and Open Source Blog
+url: "https://mmuzaf.github.io"
+baseurl: "/"
 author:
   name: Maxim Muzafarov
   email: mmuzaf@apache.org
@@ -23,12 +25,9 @@ description: >
   Personal blog of Maxim Muzafarov. I write about software development, open source, and other topics that interest me, 
   learning and sharing knowledge with others.
 
-markdown: GFM
 relative_links:
   enabled: true
   collections: true
+
 include:
   - index.md
-
-url: "https://mmuzaf.github.io"
-baseurl: "/"
