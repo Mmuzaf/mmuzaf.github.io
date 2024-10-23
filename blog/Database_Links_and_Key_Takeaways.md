@@ -1,12 +1,11 @@
 ---
 layout: page
+title: Database Links and Key Takeaways
 ---
 
-## The links of white papers, articles, and other resources that touch on the topic of the database links and key takeaways
+**Last updated: 2024-10-22**
 
-Last updated: 2024-10-22
-
-The post is updated regularly to include the latest resources and key takeaways and to remove the outdated ones. \
+The links to white papers, articles, and other resources related to the database internals, distributed databases.
 The resources are listed in the order of my personal investigation and interest in the topic.
 
 * TOC
@@ -42,7 +41,7 @@ they are based on for the next decade.
 
 ---
 
-#### Calvin: fast distributed transactions for partitioned database systems
+#### Calvin — fast distributed transactions for partitioned database systems
 Resource: https://dl.acm.org/doi/10.1145/2213836.2213838
 
 Thoughts:
