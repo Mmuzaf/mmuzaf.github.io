@@ -9,6 +9,8 @@ Last updated: 2024-10-22
 The post is updated regularly to include the latest resources and key takeaways and to remove the outdated ones. \
 The resources are listed in the order of my personal investigation and interest in the topic.
 
+{:toc}
+
 ---
 
 #### Andy Pavlo — The official ten-year retrospective of NewSQL databases (2022)
@@ -86,11 +88,11 @@ providing guarantees like Raft or Paxos.
 - **ACID transaction guarantees** and storing the data as the LSM-tree.
 - **Providing API** for the layer above to interact with the tablet, e.g. insert, update, delete, etc.
 
-**The tables overview**
+##### The tables overview
 ![ydb_tablet_abstraction_layer.png](./../img/ydb_tablet_abstraction_layer.png)
 
-**The tablet internals**
+##### The tablet internals
 ![ydb_tablet_internals.png](./../img/ydb_tablet_internals.png)
 
-**An example of the data-shard tablet**
+##### An example of the data-shard tablet
 ![ydb_datashard_tablet.png](./../img/ydb_datashard_tablet.png)
