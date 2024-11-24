@@ -14,7 +14,9 @@ The resources are listed in the order of my personal investigation and interest 
 ---
 
 #### Andy Pavlo — The official ten-year retrospective of NewSQL databases (2022)
-Resource: https://www.youtube.com/watch?v=LwkS82zs65g
+Resource: 
+
+https://www.youtube.com/watch?v=LwkS82zs65g
 
 Key Takeaways:
 
@@ -42,7 +44,9 @@ they are based on for the next decade.
 ---
 
 #### Calvin — fast distributed transactions for partitioned database systems
-Resource: https://dl.acm.org/doi/10.1145/2213836.2213838
+Resource: 
+
+https://dl.acm.org/doi/10.1145/2213836.2213838
 
 Thoughts:
 
@@ -72,8 +76,8 @@ Key Takeaways:
 #### Serverless Yandex Database Internals
 
 Resources: 
-- Oleg Bondar: Serverless YDB Internals - https://www.youtube.com/watch?v=aL9NHR0i0Xs
-- Andrey Fomichev - YDB: multiversionality in a distributed base https://www.youtube.com/watch?v=k2ccFXWdBN4
+- [Oleg Bondar - Serverless YDB Internals](https://www.youtube.com/watch?v=aL9NHR0i0Xs)
+- [Andrey Fomichev - YDB: multiversionality in a distributed base](https://www.youtube.com/watch?v=k2ccFXWdBN4)
 
 **Key Takeaways**
 
@@ -98,12 +102,11 @@ providing guarantees like Raft or Paxos.
 ![ydb_datashard_tablet.png](./../img/ydb_datashard_tablet.png)
 
 
-#### Serverless Yandex Database Internals
+#### Distributed Database Architectures + DataStax JVector Talk (CMU Intro to Database Systems)
 
 Resources:
 
-#22 - Distributed Database Architectures + DataStax JVector Talk (CMU Intro to Database Systems) - 
-https://www.youtube.com/watch?v=o7bjRUcDMx0
+[#22 - Distributed Database Architectures + DataStax JVector Talk (CMU Intro to Database Systems)](https://www.youtube.com/watch?v=o7bjRUcDMx0)
 
 **Key Takeaways**
 
