@@ -29,5 +29,12 @@ relative_links:
   enabled: true
   collections: true
 
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title.html
+    folder: blog/db
+
 include:
+  - blog/Database_Links_and_Key_Takeaways.md
   - index.md

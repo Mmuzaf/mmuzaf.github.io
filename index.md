@@ -5,12 +5,12 @@
 # To change the home page layout, edit the _layouts/home.html file.
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
-layout: home
+layout: default
 ---
 
 # Welcome
 
-## Posts
+## Collection of notes and blog posts
 
 - [Database Links and Key Takeaways](blog/Database_Links_and_Key_Takeaways.md)
 - [Java Import Orders](blog/Java_Import_Orders.md)

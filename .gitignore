@@ -24,3 +24,7 @@ hs_err_pid*
 
 # IDE
 .idea
+
+# Generated files
+_site
+.jekyll-cache
