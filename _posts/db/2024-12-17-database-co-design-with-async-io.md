@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQLLite- Serverless Runtime / Database Co-Design With Asynchronous I/O
+title: SQLLite - Serverless Runtime - Database Co-Design With Asynchronous IO
 date: 2024-12-17
 tags: [db]
 ---
