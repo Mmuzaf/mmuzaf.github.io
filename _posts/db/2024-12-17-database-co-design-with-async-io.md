@@ -23,8 +23,8 @@ flush semantics. How the **durability** of the database could be achieved the sa
 
 See also:
 
-![uring.png](..%2F..%2Fimg%2Furing.png)
+![uring.png](./../../img/uring.png)
 
-![rearchitecting-sqllite.png](..%2F..%2Fimg%2Frearchitecting-sqllite.png)
+![rearchitecting-sqllite.png](./../../img/rearchitecting-sqllite.png)
 
   

@@ -8,7 +8,9 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 
 # Happy Jekylling!
-#gem "jekyll", "~> 4.1.0"
+# Run: bundle exec jekyll serve
+# To see the site locally, open a browser and go to http://localhost:4000
+
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
 
