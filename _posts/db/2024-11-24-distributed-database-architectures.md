@@ -28,3 +28,8 @@ is outlined below:
     - It was notices that **JVector** implementations with **GC-based languages like Java are more efficient**
       than the C++ implementations due to the garbage collection and memory management. \
       _Would be interesting to investigate the reasons behind this statement._
+
+See also:
+- [Lecture 10: Cloud Replicated DB, Aurora](https://www.youtube.com/watch?v=jJSh54J1s5o)
+- [Amazon Aurora: Design Considerations for High
+  Throughput Cloud-Native Relational Databases](https://pages.cs.wisc.edu/~yxy/cs764-f20/papers/aurora-sigmod-17.pdf)

@@ -30,3 +30,8 @@ Key features of the tablets:
 
 ##### An example of the data-shard tablet
 ![ydb_datashard_tablet.png](./../../img/ydb_datashard_tablet.png)
+
+See also:
+- [Fauna: Lessons Learned Building a Real World, Calvin-based System (Matt Freels, Fauna)
+    ](https://www.youtube.com/watch?v=mxQMum5RmHA)
+- BigTable and Yugabyte
